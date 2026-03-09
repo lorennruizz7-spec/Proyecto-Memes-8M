@@ -13,3 +13,6 @@
 13. Te sale una ventana en la que pudes poner una descripcion del push que estás haciendo, que no es necesario por que ya lo has explicado en el commit .
 14.Entonces le darias a create pull request y ahi chequea si hay conflictos con tu rama y si no los hay se mezcla con la main y se sube.
 15.Los demás como siempre antes de hacer nada hacen pull se bajarían las nuevas cosas que se han metido en el main.
+16.Por ultimo desde git bash vuelves a la rama de main para tener tu repositorio actualizado con los cambios que has subido desde tu rama TuNombre/LaTareaQueVasAHacer con el 
+comando, git checkout main  , y ya desde el main hacer un git pull.
+17.No hagais ningun push desde la main, trabajamos creando ramas.
