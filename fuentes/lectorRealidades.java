@@ -1,7 +1,6 @@
 import java.nio.file.*;
 import java.util.*;
 import org.json.*;
-
 public class LectorRealidades {
 
     public static List<Realidad> leerRealidades(String ruta){
