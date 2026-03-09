@@ -1,0 +1,45 @@
+Historias de Usuario:
+HU1 -Lorena 09/03/2026 T
+
+HU2 -Lorena 09/03/2026 T
+
+HU3 -Lorena 09/03/2026 T
+
+HU4 -Lorena 09/03/2026 T
+
+HU5 - 
+
+HU6 - 
+
+HU7 -
+
+HU8 - 
+
+HU9 - 
+
+HU10 -
+
+Requerimientos Técnicos:
+
+TT1 - 
+
+TT2 - 
+
+TT3 - 
+
+TT4 - 
+
+TT5 - 
+
+TT6 - 
+
+TT7 - 
+
+
+Requerimientos de Contenido:
+
+TD1 - 
+
+TD2 - 
+
+TD3 - 
