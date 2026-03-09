@@ -1,0 +1,15 @@
+1.Lo primero es meterte en cd Documents/Proyecto8M desde la terminal de gitBash.
+2.Una vez desde esa ruta hacer un git pull(para actualizar el repo local)
+3.Crear la rama en donde vas a trabajar tu tarea, poniendo git checkout -b TuNombre/LaTareaQueVasAHacer.
+4.Como vereis se os habra puesto en azul el nuevo nombre de la rama que acabais de crear.
+5.Lo siguiente es abrir VsCode con el comando code . 
+6.Os abrirá el visual con el contenido del repositorio y en la rama que acabais de crear.
+7.Podeis trabajar sin problema en vuetra tarea, cuando la acabeis y esté testeada y documentada.
+8.Volveis a gitBash y desde alli, en la rama creada(Que si no cerrais la app no teneis que tocar nada para ubicarla) añadis los cambios con git add .
+9.Y poneís un mensaje para que los demás sepan que vais a subir con, git commit -m "Subida de TareaX"
+10. Este es el momento de hacer el push desde tu rama con, git push origin TuNombre/LaTareaQueVasAHacer 
+11.Ya estaría, entonces vas al navegador al repositorio del Proyecto y saldrá que hay una rama que quiere ser mergeada con el main.
+12.Le das a compare and pull request que sale en un botón azul para que detecte si la rama puede mezclarse con  la main sin conflictos.
+13. Te sale una ventana en la que pudes poner una descripcion del push que estás haciendo, que no es necesario por que ya lo has explicado en el commit .
+14.Entonces le darias a create pull request y ahi chequea si hay conflictos con tu rama y si no los hay se mezcla con la main y se sube.
+15.Los demás como siempre antes de hacer nada hacen pull se bajarían las nuevas cosas que se han metido en el main.
