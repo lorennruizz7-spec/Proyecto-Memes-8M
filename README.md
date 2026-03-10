@@ -1,7 +1,7 @@
 ##Integrantes 
 - Jesús Gutiérrez
 - Carlos Soriano 
-- Lorena ruiz 
+- Lorena Ruiz 
 
 ##Introducción 
 Este proyecto consiste en recopilar y analizar memes relacionados con el día de la mujer 
