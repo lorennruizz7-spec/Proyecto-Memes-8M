@@ -51,10 +51,5 @@ public class GestorResultados {
         }
     }
 
-    
-    public static void main(String[] args) {
-    comprobarArchivoResultados();
-}
-
 
 }
