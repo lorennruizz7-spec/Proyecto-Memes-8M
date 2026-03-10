@@ -1,0 +1,4 @@
+# Ignorar todos los archivos compilados .class
+*.class
+# Ignorar cualquier carpeta que empiece por jdk (ej: jdk-17, jdk-21)
+jdk*/
