@@ -10,4 +10,45 @@
   <realidad>2</realidad>
  </solucion>
 
+ <solucion>
+  <meme>3</meme>
+  <realidad>3</realidad>
+ </solucion>
+ 
+ <solucion>
+  <meme>4</meme>
+  <realidad>4</realidad>
+ </solucion>
+
+ <solucion>
+  <meme>5</meme>
+  <realidad>5</realidad>
+ </solucion>
+
+ <solucion>
+  <meme>6</meme>
+  <realidad>6</realidad>
+ </solucion>
+
+ <solucion>
+  <meme>7</meme>
+  <realidad>7</realidad>
+ </solucion>
+
+ <solucion>
+  <meme>8</meme>
+  <realidad>8</realidad>
+ </solucion>
+
+
+ <solucion>
+  <meme>9</meme>
+  <realidad>9</realidad>
+ </solucion>
+
+ <solucion>
+  <meme>10</meme>
+  <realidad>10</realidad>
+ </solucion> 
+
 </soluciones>
