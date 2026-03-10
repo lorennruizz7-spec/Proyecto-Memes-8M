@@ -1,11 +1,11 @@
 Historias de Usuario:
-HU1 -Lorena 09/03/2026 T
+HU1 - Jesús 10/03/2026 In Progress 
 
-HU2 -Lorena 09/03/2026 T
+HU2 - Carlos 10/03/2026 In Progress 
 
-HU3 -Lorena 09/03/2026 T
+HU3 -
 
-HU4 -Lorena 09/03/2026 T
+HU4 -
 
 HU5 - 
 
@@ -21,17 +21,20 @@ HU10 -
 
 Requerimientos Técnicos:
 
-TT1 - 
+TT1 - Jesús 10/03/2026 Done
 
-TT2 - 
+TT2 - Jesús 10/03/2026 Done
 
-TT3 - 
+TT3 - Lorena 10/03/2026 Done
 
-TT4 - 
+TT4 - Lorena 10/03/2026 Done
 
-TT5 - 
 
-TT6 - 
+TT5 - Carlos 10/03/2026 Done
+
+
+TT6 - Carlos 10/03/2026 Done
+
 
 TT7 - 
 
