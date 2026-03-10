@@ -1,4 +1,144 @@
-[
- { "id":1, "texto":"Las denuncias falsas son menos del 0.01%", "fuente":"CGPJ" },
- { "id":2, "texto":"La brecha salarial existe", "fuente":"INE" }
-]
+{
+  "memes": [
+    {
+      "meme": "El 78% de las denuncias por violencia de género son falsas. Las mujeres las usan para quedarse con la casa y los hijos.",
+      "respuesta": "Este dato se repite mucho en redes sociales, pero no es cierto. Según la Fiscalía General del Estado, el porcentaje de denuncias falsas por violencia de género en España es muy bajo. De hecho, tras analizar millones de denuncias presentadas en los últimos años, solo alrededor del 0,008% se han considerado falsas después de una investigación judicial. Además, muchas denuncias se archivan por falta de pruebas o porque la víctima decide no continuar con el proceso, algo que no significa que la denuncia fuera falsa.",
+      "fuentes": [
+        {
+          "pagina": "Fiscalía General del Estado",
+          "enlace": "https://www.fiscal.es/memorias/memoria2023/FISCALIA_SITE/index.html"
+        },
+        {
+          "pagina": "Consejo General del Poder Judicial",
+          "enlace": "https://www.poderjudicial.es/cgpj/es/Temas/Violencia-domestica-y-de-genero/"
+        }
+      ]
+    },
+    {
+      "meme": "La brecha salarial es un mito. Las mujeres cobran menos porque trabajan menos horas y eligen peores carreras.",
+      "respuesta": "La brecha salarial es un fenómeno que sí aparece en las estadísticas. En España, los datos del Instituto Nacional de Estadística muestran que el salario medio anual de las mujeres es más bajo que el de los hombres. Es verdad que influyen factores como el tipo de empleo o las horas trabajadas, pero incluso teniendo en cuenta esas variables sigue existiendo una diferencia. Esto se debe a varios factores, como la mayor presencia de mujeres en sectores peor pagados o las dificultades para acceder a puestos directivos.",
+      "fuentes": [
+        {
+          "pagina": "Instituto Nacional de Estadística",
+          "enlace": "https://www.ine.es/prensa/ees_2021.pdf"
+        },
+        {
+          "pagina": "OECD Gender Wage Gap",
+          "enlace": "https://www.oecd.org/gender/data/genderwagegap.htm"
+        }
+      ]
+    },
+    {
+      "meme": "Las mujeres cobran menos porque trabajan menos horas y eligen peores carreras.",
+      "respuesta": "Es cierto que las diferencias en las horas trabajadas o en los sectores laborales influyen en los salarios, pero no explican completamente la brecha salarial. Informes de la Comisión Europea señalan que también intervienen otros factores, como la segregación laboral, la menor presencia de mujeres en puestos de responsabilidad o las consecuencias que puede tener la maternidad en la carrera profesional.",
+      "fuentes": [
+        {
+          "pagina": "Comisión Europea – Gender Pay Gap",
+          "enlace": "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/gender-equality/equal-pay/gender-pay-gap-situation-eu_es"
+        },
+        {
+          "pagina": "Eurostat Gender Equality Statistics",
+          "enlace": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Gender_statistics"
+        }
+      ]
+    },
+    {
+      "meme": "El 8M es una manifestación política de la izquierda, no tiene nada que ver con los derechos de las mujeres.",
+      "respuesta": "El 8 de marzo, Día Internacional de la Mujer, tiene un origen histórico relacionado con la reivindicación de derechos laborales y sociales para las mujeres. Fue reconocido oficialmente por Naciones Unidas en 1975 y hoy en día se celebra en muchos países del mundo. Aunque en algunos lugares se asocie más con ciertos movimientos políticos, su objetivo principal es recordar los avances logrados y señalar las desigualdades que todavía existen.",
+      "fuentes": [
+        {
+          "pagina": "ONU Mujeres",
+          "enlace": "https://www.unwomen.org/es/noticias/en-la-mira/2024/03/dia-internacional-de-la-mujer"
+        },
+        {
+          "pagina": "Naciones Unidas",
+          "enlace": "https://www.un.org/es/observances/womens-day"
+        }
+      ]
+    },
+    {
+      "meme": "Las mujeres tienen más ventajas que los hombres: cuotas, ayudas y leyes a su favor.",
+      "respuesta": "Las medidas como las cuotas o algunas ayudas específicas se crearon para intentar corregir desigualdades que todavía existen en distintos ámbitos. Por ejemplo, las mujeres siguen estando menos representadas en puestos de dirección o liderazgo y suelen asumir una mayor parte del trabajo doméstico y de cuidados. Estas políticas buscan equilibrar la situación, no dar privilegios permanentes a un grupo.",
+      "fuentes": [
+        {
+          "pagina": "ONU Mujeres – Gender Equality",
+          "enlace": "https://www.unwomen.org/es/what-we-do/gender-equality"
+        },
+        {
+          "pagina": "World Economic Forum – Global Gender Gap Report",
+          "enlace": "https://www.weforum.org/reports/global-gender-gap-report-2023/"
+        }
+      ]
+    },
+    {
+      "meme": "La violencia doméstica también la ejercen las mujeres, pero eso no sale en las noticias.",
+      "respuesta": "Es cierto que los hombres también pueden sufrir violencia doméstica y que este problema existe. Sin embargo, las estadísticas muestran que la mayoría de los casos graves de violencia dentro de la pareja tienen como víctimas a mujeres. Según la Organización Mundial de la Salud, aproximadamente una de cada tres mujeres en el mundo ha sufrido violencia física o sexual a lo largo de su vida.",
+      "fuentes": [
+        {
+          "pagina": "Organización Mundial de la Salud – Violence Against Women",
+          "enlace": "https://www.who.int/news-room/fact-sheets/detail/violence-against-women"
+        },
+        {
+          "pagina": "Ministerio de Igualdad de España – Estadísticas",
+          "enlace": "https://violenciagenero.igualdad.gob.es/violenciaEnCifras/home.htm"
+        }
+      ]
+    },
+    {
+      "meme": "En España la mujer lleva décadas con los mismos derechos que el hombre. El feminismo ya no tiene nada que reivindicar.",
+      "respuesta": "Es verdad que en las últimas décadas se han conseguido muchos avances legales en materia de igualdad. Sin embargo, todavía existen algunas diferencias en ámbitos como los salarios, la presencia en puestos directivos o la distribución de tareas domésticas. Por ejemplo, los datos europeos muestran que las mujeres siguen dedicando más tiempo al trabajo doméstico y de cuidados no remunerados.",
+      "fuentes": [
+        {
+          "pagina": "Eurostat – Gender Equality",
+          "enlace": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Gender_equality_statistics"
+        },
+        {
+          "pagina": "Instituto Nacional de Estadística – Uso del tiempo",
+          "enlace": "https://www.ine.es/prensa/eet_prensa.htm"
+        }
+      ]
+    },
+    {
+      "meme": "Las cuotas de género son discriminación pura. Contratan a mujeres menos válidas que hombres más preparados.",
+      "respuesta": "El objetivo de las cuotas de género es aumentar la presencia de mujeres en espacios donde tradicionalmente han estado muy poco representadas, como la política o los puestos de dirección. Diversos estudios muestran que estas medidas ayudan a equilibrar la representación sin que eso signifique elegir a personas menos preparadas.",
+      "fuentes": [
+        {
+          "pagina": "World Economic Forum – Global Gender Gap Report",
+          "enlace": "https://www.weforum.org/reports/global-gender-gap-report-2023/"
+        },
+        {
+          "pagina": "European Institute for Gender Equality",
+          "enlace": "https://eige.europa.eu/gender-mainstreaming/tools-methods/gender-quotas"
+        }
+      ]
+    },
+    {
+      "meme": "Los hombres se suicidan más, mueren más en el trabajo y pierden la custodia de sus hijos. ¿Dónde está el día del hombre?",
+      "respuesta": "Algunas de estas afirmaciones son ciertas. Por ejemplo, los hombres tienen tasas de suicidio más altas y también están más presentes en trabajos con mayor riesgo de accidentes. Estos problemas también forman parte del debate sobre los roles de género y las presiones sociales que afectan a los hombres. De hecho, el Día Internacional del Hombre existe y se celebra el 19 de noviembre.",
+      "fuentes": [
+        {
+          "pagina": "Organización Mundial de la Salud – Suicide Worldwide",
+          "enlace": "https://www.who.int/publications/i/item/9789240026643"
+        },
+        {
+          "pagina": "Eurostat – Accidentes laborales",
+          "enlace": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Accidents_at_work_statistics"
+        }
+      ]
+    },
+    {
+      "meme": "El feminismo radical quiere destruir la familia tradicional y convertir a los hombres en ciudadanos de segunda.",
+      "respuesta": "El feminismo es un movimiento muy amplio y con muchas corrientes diferentes, pero su objetivo principal es defender la igualdad de derechos entre hombres y mujeres. En general, no pretende destruir la familia, sino cuestionar las desigualdades que puedan existir dentro de algunos modelos familiares y promover relaciones más igualitarias.",
+      "fuentes": [
+        {
+          "pagina": "ONU Mujeres",
+          "enlace": "https://www.unwomen.org/es/what-we-do/gender-equality"
+        },
+        {
+          "pagina": "UNESCO – Gender Equality",
+          "enlace": "https://www.unesco.org/en/gender-equality"
+        }
+      ]
+    }
+  ]
+}
