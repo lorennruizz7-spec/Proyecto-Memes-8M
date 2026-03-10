@@ -1,9 +1,7 @@
 /**
- * Fichero: GestorResultados.java
  * Descripción: Este fichero forma parte del proyecto Memes-8M.
- * Contiene la clase GestorResultados.java.
- * Corresponde a la HU2 del proyecto.
- * @autor: Carlos Soriano
+ * 
+ * @author: Carlos Soriano
  */
 
 import java.io.File;
@@ -13,12 +11,17 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
- * Clase: GestorResultados
- * Descripción:Se encarga de gestionar el directorio y el fichero donde se guardaran las mejores puntuaciones.
- * Comprueba si existe el directorio "resultados" y el fichero "mejores.txt". Sino existen, los crea para que el programa pueda seguir funcionando.
+ * Corta:Se encarga de gestionar el directorio y el fichero donde se guardaran las mejores puntuaciones.
+ * 
+ * Larga:Comprueba si existe el directorio "resultados" y el fichero "mejores.txt". Sino existen, los crea para que el programa pueda seguir funcionando.
  */
-
 public class GestorResultados {
+
+    /**
+     * Este método comprueba si el directorio de resultados existe y el archivos.txt
+     * 
+     * Comprueba si está creado el directorio y contiene mejores.txt en caso de que no existan los crea, tanto el directorio como el archivo.txt
+     */
 
      public static void comprobarArchivoResultados() {
 
