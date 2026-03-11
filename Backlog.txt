@@ -1,17 +1,17 @@
 Historias de Usuario:
-HU1 - Jesús 10/03/2026 In Progress 
+HU1 - Jesús 10/03/2026  
 
-HU2 - Carlos 10/03/2026 In Progress 
+HU2 - Carlos 10/03/2026 
 
-HU3 - Lorena 10/03/2026 In Progress
+HU3 - Lorena 10/03/2026 
 
-HU4 -
+HU4 - Carlos 11/03/2026 
 
-HU5 - 
+HU5 - Lorena
 
-HU6 - 
+HU6 - Jesús
 
-HU7 -
+HU7 - Carlos
 
 HU8 - 
 
@@ -21,19 +21,19 @@ HU10 -
 
 Requerimientos Técnicos:
 
-TT1 - Jesús 10/03/2026 Done
+TT1 - Jesús 10/03/2026 
 
-TT2 - Jesús 10/03/2026 Done
+TT2 - Jesús 10/03/2026 
 
-TT3 - Lorena 10/03/2026 Done
+TT3 - Lorena 10/03/2026 
 
-TT4 - Lorena 10/03/2026 Done
-
-
-TT5 - Carlos 10/03/2026 Done
+TT4 - Lorena 10/03/2026 
 
 
-TT6 - Carlos 10/03/2026 Done
+TT5 - Carlos 10/03/2026 
+
+
+TT6 - Carlos 10/03/2026 
 
 
 TT7 - 

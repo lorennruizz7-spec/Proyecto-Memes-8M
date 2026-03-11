@@ -4,3 +4,5 @@
 jdk*/
 # Ignorar la carpeta de librerias externas
 librerias/
+# Ignorar la carpeta de vscode  externas
+.vscode/
