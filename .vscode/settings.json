@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "fuentes"
-    ],
-    "java.project.referencedLibraries": [
-        "librerias\\json-20251224.jar"
-    ]
-}
