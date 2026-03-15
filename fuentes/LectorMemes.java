@@ -3,18 +3,18 @@ import java.nio.file.*;
 import java.util.*;
 
 /**
-
-
-Clase encargada de leer el fichero de memes (memes.txt)
+ * Clase encargada de leer el fichero de memes (memes.txt)
  * y convertir cada línea del archivo en un objeto de tipo Meme.
+ * 
+ * @author Lorena Ruiz
  */
 public class LectorMemes {
 
     /**
      * Este método recibe la ruta del fichero de memes
      * y devuelve una lista con todos los memes encontrados.
-     * @param recibe una lista de memes
-     * @return recibe una ruta
+     * @param ruta recibe una lista de memes
+     * @return  List&lt;Meme&gt; recibe una ruta
      */
     public static List<Meme> leerMemes(String ruta){
 
