@@ -19,14 +19,14 @@
       ]
     },
     {
-      "id": 3,
-      "meme": "Las mujeres cobran menos porque trabajan menos horas y eligen peores carreras.",
-      "respuesta": "Es cierto que las diferencias en las horas trabajadas o en los sectores laborales influyen en los salarios, pero no explican completamente la brecha salarial. Informes de la Comisión Europea señalan que también intervienen otros factores, como la segregación laboral, la menor presencia de mujeres en puestos de responsabilidad o las consecuencias que puede tener la maternidad en la carrera profesional.",
-      "fuentes": [
-        { "pagina": "Comisión Europea – Gender Pay Gap", "enlace": "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/gender-equality/equal-pay/gender-pay-gap-situation-eu_es" },
-        { "pagina": "Eurostat Gender Equality Statistics", "enlace": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Gender_statistics" }
-      ]
-    },
+    "id": 3,
+    "meme": "Los hombres ya no tienen derechos. Con la ley de violencia de género basta una denuncia para arruinarle la vida a un inocente.",
+    "respuesta": "La Ley Orgánica 1/2004 de Medidas de Protección Integral contra la Violencia de Género incluye garantías procesales para el denunciado: presunción de inocencia, derecho a defensa y juicio oral. Las denuncias falsas son perseguibles penalmente por denuncia falsa o acusación y simulación de delito. Según el Consejo General del Poder Judicial, las denuncias falsas en violencia de género representan menos del 0,01% del total. La ley no elimina derechos a los hombres, sino que establece una protección específica para las víctimas de una violencia con un patrón estructural demostrado.",
+    "fuentes": [
+      {"pagina": "Ley Orgánica 1/2004 – BOE","enlace": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-21760"},
+      {"pagina": "CGPJ – Estadísticas de Violencia Doméstica y de Género","enlace": "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/Datos-penales--civiles-y-sociales/Violencia-domestica-y-Violencia-de-genero/"}
+    ]
+     },
     {
       "id": 4,
       "meme": "El 8M es una manifestación política de la izquierda, no tiene nada que ver con los derechos de las mujeres.",
