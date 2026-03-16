@@ -20,6 +20,8 @@ import java.util.*;
  *         al usuario y registra el resultado.                            // ← NUEVO
  *
  * @author Jesús Gutiérrez Rucha
+ * @author Carlos Soriano Pegado
+ * @author Lorena Ruiz Roblas
  */
 public class Juego {
  
@@ -27,12 +29,12 @@ public class Juego {
  
     private final List<Meme> memes;
     private final List<Realidad> realidades;
-    private int                  puntuacion = 0;
+    private int puntuacion = 0;
  
     /**
      * Constructor. Recibe las listas de memes y realidades ya cargadas.
      *
-     * @param memes      Lista de memes disponibles para el juego.
+     * @param memes Lista de memes disponibles para el juego.
      * @param realidades Lista de realidades disponibles como opciones de respuesta.
      */
     public Juego(List<Meme> memes, List<Realidad> realidades) {
@@ -117,8 +119,8 @@ public class Juego {
      * Repite la pregunta hasta recibir una entrada valida.
      *
      * @param scanner Scanner de entrada.
-     * @param max     Numero maximo aceptado (tamanyo de la lista de opciones).
-     * @return        Numero entero valido introducido por el usuario.
+     * @param max Numero maximo aceptado (tamanyo de la lista de opciones).
+     * @return Numero entero valido introducido por el usuario.
      */
     public int pedirEleccion(Scanner scanner, int max) {
         while (true) {
@@ -150,11 +152,11 @@ public class Juego {
         System.out.println("  Has acertado " + puntuacion + " de " + RONDAS + " memes.");
  
         if (puntuacion == RONDAS) {
-            System.out.println("  Perfecto! Conoces muy bien la realidad.");
+            System.out.println("Perfecto! Conoces muy bien la realidad.");
         } else if (puntuacion >= 3) {
-            System.out.println("  Bien hecho! Tienes buen ojo critico.");
+            System.out.println("Bien hecho! Tienes buen ojo critico.");
         } else {
-            System.out.println("  Sigue aprendiendo, la informacion es poder!");
+            System.out.println("Sigue aprendiendo, la informacion es poder!");
         }
         System.out.println("======================================\n");
 
@@ -175,7 +177,7 @@ public class Juego {
      * Permite encontrar la realidad correcta que desmiente cada meme.
      *
      * @param id Id de la realidad buscada (coincide con el id del meme segun soluciones.xml).
-     * @return   El objeto Realidad correspondiente, o null si no existe.
+     * @return El objeto Realidad correspondiente, o null si no existe.
      */
     public Realidad buscarRealidadPorId(int id) {
         for (Realidad real : realidades) {
@@ -184,5 +186,8 @@ public class Juego {
         return null;
     }
  
-    public int getPuntuacion() { return puntuacion; }
+    public int getPuntuacion() { 
+        return puntuacion; 
+    }
+    
 }
