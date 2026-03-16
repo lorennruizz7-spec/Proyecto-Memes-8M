@@ -16,6 +16,9 @@ import java.util.*;
  *
  *   HU8 - Muestra la puntuacion final al terminar las 5 rondas.
  *
+ *   HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre  // ← NUEVO
+ *         al usuario y registra el resultado.                            // ← NUEVO
+ *
  * @author Jesús Gutiérrez Rucha
  * @author Carlos Soriano Pegado
  * @author Lorena Ruiz Roblas
@@ -47,7 +50,7 @@ public class Juego {
      * Contiene el bucle principal del juego con las 5 rondas.
      * Cada ronda muestra un meme y sus opciones (HU5), recoge la respuesta del
      * usuario y puntua (HU6), y muestra el marcador (HU7).
-     * Al salir del bucle muestra la puntuacion final (HU8).
+     * Al salir del bucle muestra la puntuacion final (HU8) y gestiona el Top 3 (HU9).
      *
      * @param scanner Scanner para leer la entrada del usuario por consola.
      */
@@ -107,7 +110,8 @@ public class Juego {
         }
  
         // HU8 - Al terminar las 5 rondas, mostramos la puntuacion final.
-        mostrarPuntuacionFinal();
+        // ← CAMBIO: se pasa el scanner para gestionar HU9 dentro del metodo
+        mostrarPuntuacionFinal(scanner);
     }
  
     /**
@@ -135,8 +139,13 @@ public class Juego {
     /**
      * HU8 - Muestra por consola la puntuacion final obtenida por el usuario
      * al completar las 5 rondas, junto con un mensaje segun el resultado.
+     * HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre   // ← NUEVO
+     *       al usuario y registra el resultado en mejores.txt.              // ← NUEVO
+     *
+     * @param scanner Scanner para pedir el nombre si entra en el Top 3.    // ← NUEVO
      */
-    public void mostrarPuntuacionFinal() {
+    // ← CAMBIO: ahora recibe scanner para gestionar HU9
+    public void mostrarPuntuacionFinal(Scanner scanner) {
         System.out.println("======================================");
         System.out.println("         PUNTUACION FINAL");
         System.out.println("======================================");
@@ -150,6 +159,17 @@ public class Juego {
             System.out.println("Sigue aprendiendo, la informacion es poder!");
         }
         System.out.println("======================================\n");
+
+        // ================== NUEVO: HU9 ==================
+        // Si la puntuacion esta entre las tres mejores, pide el nombre y guarda el resultado.
+        if (GestorResultados.estaEnTop3(puntuacion)) {
+            System.out.println("Enhorabuena! Tu puntuacion esta entre las tres mejores.");
+            System.out.print("Introduce tu nombre: ");
+            String nombre = scanner.nextLine().trim();
+            if (nombre.isEmpty()) nombre = "Anonimo";
+            GestorResultados.guardarResultado(nombre, puntuacion);
+        }
+        // ================== FIN NUEVO: HU9 ==================
     }
  
     /**
