@@ -6,13 +6,15 @@ import java.util.*;
  * Se encarga de preparar los datos necesarios y lanzar el juego.
  *
  * @author Jesús Gutiérrez Rucha
+ * @author Carlos Soriano Pegado
+ * @author Lorena Ruiz Roblas
  */
 public class Main {
  
-    private static final String RUTA_MEMES      = "datos/memes.txt";
+    private static final String RUTA_MEMES = "datos/memes.txt";
     private static final String RUTA_REALIDADES = "datos/realidades.json";
  
-    private List<Meme>     memes;
+    private List<Meme> memes;
     private List<Realidad> realidades;
  
     public static void main(String[] args) {
@@ -57,6 +59,10 @@ public class Main {
         return true;
     }
  
-    public List<Meme>     getMemes()      { return memes; }
-    public List<Realidad> getRealidades() { return realidades; }
+    public List<Meme> getMemes() {
+         return memes; 
+        }
+    public List<Realidad> getRealidades() { 
+        return realidades; 
+    }
 }
