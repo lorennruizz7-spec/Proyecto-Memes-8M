@@ -16,8 +16,10 @@ import java.util.*;
  *
  *   HU8 - Muestra la puntuacion final al terminar las 5 rondas.
  *
- *   HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre  // ← NUEVO
- *         al usuario y registra el resultado.                            // ← NUEVO
+ *   HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre
+ *         al usuario y registra el resultado.
+ *
+ *   HU10 - Muestra la lista con las mejores puntuaciones y se despide. // ← NUEVO
  *
  * @author Jesús Gutiérrez Rucha
  * @author Carlos Soriano Pegado
@@ -43,14 +45,15 @@ public class Juego {
     }
  
     // -------------------------------------------------------------------------
-    // HU5 + HU6 + HU7 + HU8 - Logica del juego
+    // HU5 + HU6 + HU7 + HU8 + HU9 + HU10 - Logica del juego // ← NUEVO HU10
     // -------------------------------------------------------------------------
  
     /**
      * Contiene el bucle principal del juego con las 5 rondas.
      * Cada ronda muestra un meme y sus opciones (HU5), recoge la respuesta del
      * usuario y puntua (HU6), y muestra el marcador (HU7).
-     * Al salir del bucle muestra la puntuacion final (HU8) y gestiona el Top 3 (HU9).
+     * Al salir del bucle muestra la puntuacion final (HU8), gestiona el Top 3 (HU9)
+     * y muestra las mejores puntuaciones despidiendose (HU10). // ← NUEVO
      *
      * @param scanner Scanner para leer la entrada del usuario por consola.
      */
@@ -59,8 +62,6 @@ public class Juego {
         System.out.println("\n=== BIENVENIDO AL JUEGO MEMES 8M ===");
         System.out.println("Desmiente " + RONDAS + " memes eligiendo la realidad correcta.\n");
  
-        // HU5 - Copiamos la lista de memes y la mezclamos para que cada partida
-        // muestre los memes en orden distinto y sin repetirlos.
         List<Meme> memesSinRepetir = new ArrayList<>(memes);
         Collections.shuffle(memesSinRepetir);
  
@@ -70,12 +71,9 @@ public class Juego {
             System.out.println("Ronda " + ronda + " de " + RONDAS);
             System.out.println("--------------------------------------");
  
-            // HU5 - Seleccionamos el meme de esta ronda (ya barajado, sin repeticion).
             Meme meme = memesSinRepetir.get(ronda - 1);
             System.out.println("\nMEME:\n  " + meme.getTexto() + "\n");
  
-            // HU5 - Barajamos las realidades y las mostramos como lista numerada,
-            // de modo que la respuesta correcta no este siempre en la misma posicion.
             List<Realidad> opcionesBarajadas = new ArrayList<>(realidades);
             Collections.shuffle(opcionesBarajadas);
  
@@ -84,13 +82,10 @@ public class Juego {
                 System.out.println("  " + (i + 1) + ". " + opcionesBarajadas.get(i).getTexto());
             }
  
-            // HU6 - Pedimos al usuario que elija un numero de la lista.
             int eleccion = pedirEleccion(scanner, opcionesBarajadas.size());
             Realidad realidadElegida  = opcionesBarajadas.get(eleccion - 1);
             Realidad realidadCorrecta = buscarRealidadPorId(meme.getId());
  
-            // HU6 - Comparamos la realidad elegida con la correcta segun soluciones.xml.
-            // Si coinciden los ids, la respuesta es correcta y se suma un punto.
             boolean acierto = realidadCorrecta != null
                     && realidadElegida.getId() == realidadCorrecta.getId();
  
@@ -104,13 +99,9 @@ public class Juego {
                 }
             }
  
-            // HU7 - Mostramos el marcador actualizado al final de cada ronda.
-            // El bucle continua hasta completar las 5 rondas.
             System.out.println("\nMarcador: " + puntuacion + " / " + ronda + "\n");
         }
  
-        // HU8 - Al terminar las 5 rondas, mostramos la puntuacion final.
-        // ← CAMBIO: se pasa el scanner para gestionar HU9 dentro del metodo
         mostrarPuntuacionFinal(scanner);
     }
  
@@ -139,13 +130,14 @@ public class Juego {
     /**
      * HU8 - Muestra por consola la puntuacion final obtenida por el usuario
      * al completar las 5 rondas, junto con un mensaje segun el resultado.
-     * HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre   // ← NUEVO
-     *       al usuario y registra el resultado en mejores.txt.              // ← NUEVO
+     * HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre
+     *       al usuario y registra el resultado en mejores.txt.
+     * HU10 - Llama a mostrarTop3() para mostrar el ranking y despedirse. // ← NUEVO
      *
-     * @param scanner Scanner para pedir el nombre si entra en el Top 3.    // ← NUEVO
+     * @param scanner Scanner para pedir el nombre si entra en el Top 3.
      */
-    // ← CAMBIO: ahora recibe scanner para gestionar HU9
     public void mostrarPuntuacionFinal(Scanner scanner) {
+
         System.out.println("======================================");
         System.out.println("         PUNTUACION FINAL");
         System.out.println("======================================");
@@ -160,8 +152,7 @@ public class Juego {
         }
         System.out.println("======================================\n");
 
-        // ================== NUEVO: HU9 ==================
-        // Si la puntuacion esta entre las tres mejores, pide el nombre y guarda el resultado.
+        // HU9
         if (GestorResultados.estaEnTop3(puntuacion)) {
             System.out.println("Enhorabuena! Tu puntuacion esta entre las tres mejores.");
             System.out.print("Introduce tu nombre: ");
@@ -169,8 +160,38 @@ public class Juego {
             if (nombre.isEmpty()) nombre = "Anonimo";
             GestorResultados.guardarResultado(nombre, puntuacion);
         }
-        // ================== FIN NUEVO: HU9 ==================
+
+        // HU10 - Una vez gestionado el Top 3, se muestra el ranking y se despide. // ← NUEVO
+        mostrarTop3(); // ← NUEVO
     }
+
+    // ← NUEVO: método completo añadido para la HU10
+    /**
+     * HU10 - Muestra por consola la lista con las mejores puntuaciones
+     * y se despide del usuario.
+     */
+    public void mostrarTop3() {
+
+        System.out.println("======================================");
+        System.out.println("        MEJORES PUNTUACIONES");
+        System.out.println("======================================");
+
+        List<String[]> top3 = GestorResultados.obtenerTop3();
+
+        if (top3.isEmpty()) {
+            System.out.println("  Aun no hay puntuaciones registradas.");
+        } else {
+            for (int i = 0; i < top3.size(); i++) {
+                System.out.println("  " + (i + 1) + ". " + top3.get(i)[0] + " - " + top3.get(i)[1] + " puntos");
+            }
+        }
+
+        System.out.println("======================================");
+        System.out.println("  Gracias por jugar a Memes 8M!");
+        System.out.println("  Hasta la proxima!");
+        System.out.println("======================================\n");
+    }
+    // ← FIN NUEVO
  
     /**
      * HU6 - Busca en la lista de realidades aquella cuyo id coincide con el dado.
@@ -189,5 +210,4 @@ public class Juego {
     public int getPuntuacion() { 
         return puntuacion; 
     }
-    
 }
