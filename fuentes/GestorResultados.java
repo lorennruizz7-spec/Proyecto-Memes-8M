@@ -84,10 +84,9 @@ public class GestorResultados {
      *
      * @return lista con hasta 3 elementos. Cada elemento es un array
      *         de String donde:
-     *         <ul>
-     *           <li>posición 0: nombre del jugador</li>
-     *           <li>posición 1: puntuación obtenida</li>
-     *         </ul>
+     *           posición 0: nombre del jugador
+     *           posición 1: puntuación obtenida
+     *         
      */
     public static List<String[]> obtenerTop3() {
 

@@ -19,7 +19,7 @@ import java.util.*;
  *   HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre
  *         al usuario y registra el resultado.
  *
- *   HU10 - Muestra la lista con las mejores puntuaciones y se despide. // ← NUEVO
+ *   HU10 - Muestra la lista con las mejores puntuaciones y se despide. 
  *
  * @author Jesús Gutiérrez Rucha
  * @author Carlos Soriano Pegado
@@ -45,7 +45,7 @@ public class Juego {
     }
  
     // -------------------------------------------------------------------------
-    // HU5 + HU6 + HU7 + HU8 + HU9 + HU10 - Logica del juego // ← NUEVO HU10
+    // HU5 + HU6 + HU7 + HU8 + HU9 + HU10 - Logica del juego 
     // -------------------------------------------------------------------------
  
     /**
@@ -53,7 +53,7 @@ public class Juego {
      * Cada ronda muestra un meme y sus opciones (HU5), recoge la respuesta del
      * usuario y puntua (HU6), y muestra el marcador (HU7).
      * Al salir del bucle muestra la puntuacion final (HU8), gestiona el Top 3 (HU9)
-     * y muestra las mejores puntuaciones despidiendose (HU10). // ← NUEVO
+     * y muestra las mejores puntuaciones despidiendose (HU10). 
      *
      * @param scanner Scanner para leer la entrada del usuario por consola.
      */
@@ -132,7 +132,7 @@ public class Juego {
      * al completar las 5 rondas, junto con un mensaje segun el resultado.
      * HU9 - Si la puntuacion esta entre las tres mejores, pide el nombre
      *       al usuario y registra el resultado en mejores.txt.
-     * HU10 - Llama a mostrarTop3() para mostrar el ranking y despedirse. // ← NUEVO
+     * HU10 - Llama a mostrarTop3() para mostrar el ranking y despedirse. 
      *
      * @param scanner Scanner para pedir el nombre si entra en el Top 3.
      */
@@ -161,11 +161,10 @@ public class Juego {
             GestorResultados.guardarResultado(nombre, puntuacion);
         }
 
-        // HU10 - Una vez gestionado el Top 3, se muestra el ranking y se despide. // ← NUEVO
+        // HU10 - Una vez gestionado el Top 3, se muestra el ranking y se despide.
         mostrarTop3(); // ← NUEVO
     }
 
-    // ← NUEVO: método completo añadido para la HU10
     /**
      * HU10 - Muestra por consola la lista con las mejores puntuaciones
      * y se despide del usuario.
@@ -191,7 +190,7 @@ public class Juego {
         System.out.println("  Hasta la proxima!");
         System.out.println("======================================\n");
     }
-    // ← FIN NUEVO
+    
  
     /**
      * HU6 - Busca en la lista de realidades aquella cuyo id coincide con el dado.
