@@ -7,17 +7,17 @@ HU3 - Lorena 10/03/2026
 
 HU4 - Carlos 11/03/2026 
 
-HU5 - Lorena
+HU5 - Lorena 16/03/2026 
 
-HU6 - Jesús
+HU6 - Jesús 16/03/2026 
 
-HU7 - Carlos
+HU7 - Carlos 16/03/2026 
 
-HU8 - 
+HU8 - Jesús 16/03/2026 
 
-HU9 - 
+HU9 - Carlos 16/03/2026 
 
-HU10 -
+HU10 - Jesús 16/03/2026 
 
 Requerimientos Técnicos:
 
@@ -41,8 +41,8 @@ TT7 -
 
 Requerimientos de Contenido:
 
-TD1 - 
+TD1 - Lorena
 
-TD2 - 
+TD2 - Lorena
 
-TD3 - 
+TD3 - Lorena
