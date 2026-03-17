@@ -1,3 +1,4 @@
+package com.iescastelar;
 public class Realidad {
 
     private int id;

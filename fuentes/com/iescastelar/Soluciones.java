@@ -1,3 +1,4 @@
+package com.iescastelar;
 public class Soluciones {
 
     private int memeId;

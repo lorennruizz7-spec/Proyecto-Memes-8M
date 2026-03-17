@@ -1,3 +1,4 @@
+package com.iescastelar;
 /**
  * Descripción: Este fichero forma parte del proyecto Memes-8M.
  * Gestiona el almacenamiento y consulta de las mejores puntuaciones del juego.

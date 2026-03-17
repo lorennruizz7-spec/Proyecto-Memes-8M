@@ -29,20 +29,16 @@ TT3 - Lorena 10/03/2026
 
 TT4 - Lorena 10/03/2026 
 
-
 TT5 - Carlos 10/03/2026 
-
 
 TT6 - Carlos 10/03/2026 
 
-
-TT7 - 
-
+TT7 - Carlos 16/03/2026
 
 Requerimientos de Contenido:
 
-TD1 - Lorena
+TD1 - Lorena 17/03/2026
 
-TD2 - Lorena
+TD2 - Lorena 17/03/2026
 
-TD3 - Lorena
+TD3 - Jesús 17/03/2026

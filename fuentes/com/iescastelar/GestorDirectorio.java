@@ -1,3 +1,4 @@
+package com.iescastelar;
 /**
  * Corta: Gestiona y verifica la existencia de archivos de datos del sistema.
  *
